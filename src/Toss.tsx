@@ -23,7 +23,7 @@ export const Toss = (props: Props) => {
                     spacing={1}
                     sx={{ backgroundColor: "#212121" }}
                 >
-                    <Typography variant="h5" fontWeight={800}>
+                    <Typography variant="h5" fontWeight={800} color="#009639">
                         2
                     </Typography>
                     <Typography variant="body1" fontWeight={200}>
@@ -40,7 +40,7 @@ export const Toss = (props: Props) => {
                     spacing={1}
                     sx={{ backgroundColor: "#212121" }}
                 >
-                    <Typography variant="h5" fontWeight={800}>
+                    <Typography variant="h5" fontWeight={800} color="#E22F22">
                         2
                     </Typography>
                     <Typography variant="body1" fontWeight={200}>
@@ -65,7 +65,7 @@ export const Toss = (props: Props) => {
                     spacing={1}
                     sx={{ backgroundColor: "#212121" }}
                 >
-                    <Typography variant="h5" fontWeight={800}>
+                    <Typography variant="h5" fontWeight={800} color="#009639">
                         2
                     </Typography>
                     <Typography variant="body1" fontWeight={200}>
@@ -82,7 +82,7 @@ export const Toss = (props: Props) => {
                     spacing={1}
                     sx={{ backgroundColor: "#212121" }}
                 >
-                    <Typography variant="h5" fontWeight={800}>
+                    <Typography variant="h5" fontWeight={800} color="#E22F22">
                         2
                     </Typography>
                     <Typography variant="body1" fontWeight={200}>

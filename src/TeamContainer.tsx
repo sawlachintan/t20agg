@@ -1,4 +1,10 @@
-import { Stack, Tooltip, Button } from "@mui/material";
+import {
+    Stack,
+    Tooltip,
+    Button,
+    ThemeProvider,
+    createTheme,
+} from "@mui/material";
 import { useState } from "react";
 import { useLocalStorage } from "react-use";
 import { TEAMS } from "./assets/constants";
@@ -8,6 +14,7 @@ type Props = {};
 type teamType = {
     abb: string;
     name: string;
+    color: string;
 };
 
 export const TeamContainer = (props: Props) => {
@@ -24,16 +31,30 @@ export const TeamContainer = (props: Props) => {
         >
             {TEAMS.map((a_team: teamType, index: number) => {
                 return (
-                    <Tooltip key={index} title={a_team.name}>
-                        <Button
-                            variant={
-                                a_team.abb === team ? "contained" : "outlined"
-                            }
-                            onClick={() => setTeam(a_team.abb)}
-                        >
-                            {a_team.abb}
-                        </Button>
-                    </Tooltip>
+                    <ThemeProvider
+                        theme={createTheme({
+                            palette: {
+                                primary: {
+                                    main: a_team.color,
+                                },
+                            },
+                        })}
+                    >
+                        <Tooltip key={index} title={a_team.name}>
+                            <Button
+                                variant={
+                                    a_team.abb === team
+                                        ? "contained"
+                                        : "outlined"
+                                }
+                                size="large"
+                                onClick={() => setTeam(a_team.abb)}
+                                sx={{ borderWidth: "2px" }}
+                            >
+                                {a_team.abb}
+                            </Button>
+                        </Tooltip>
+                    </ThemeProvider>
                 );
             })}
         </Stack>
