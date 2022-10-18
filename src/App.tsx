@@ -6,22 +6,15 @@ import {
     createTheme,
     Stack,
     Button,
-    Card,
-    Divider,
-    CardHeader,
-    CardContent,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { FC } from "react";
-import { TestCard } from "./TestCard";
-
-const ELEVATION: number = 8;
+import { FONTS, TEAMS, ELEVATION } from "./assets/constants";
+import { Toss } from "./Toss";
 
 type Props = {
     index: number;
 };
-
-const array: number[] = [0, 1, 2, 3];
 
 const SomeThing: FC<Props> = ({ index }) => (
     <Grid
@@ -49,19 +42,7 @@ function App() {
             mode: "dark",
         },
         typography: {
-            fontFamily: [
-                "Poppins",
-                "-apple-system",
-                "BlinkMacSystemFont",
-                '"Segoe UI"',
-                "Roboto",
-                '"Helvetica Neue"',
-                "Arial",
-                "sans-serif",
-                '"Apple Color Emoji"',
-                '"Segoe UI Emoji"',
-                '"Segoe UI Symbol"',
-            ].join(","),
+            fontFamily: FONTS.join(","),
         },
     });
 
@@ -112,119 +93,17 @@ function App() {
                         overflow="scroll"
                         justifyContent={"space-between"}
                     >
-                        <Button variant="contained">IND</Button>
-                        <Button variant="contained">AUS</Button>
-                        <Button variant="contained">NZ</Button>
-                        <Button variant="contained">PAK</Button>
-                        <Button variant="contained">ENG</Button>
-                        <Button variant="contained">SA</Button>
-                        <Button variant="contained">BAN</Button>
-                        <Button variant="contained">NAM</Button>
-                        <Button variant="contained">SCO</Button>
-                        <Button variant="contained">WI</Button>
-                        <Button variant="contained">SL</Button>
+                        {TEAMS.map((name, index) => {
+                            return (
+                                <Button key={index} variant="contained">
+                                    {name}
+                                </Button>
+                            );
+                        })}
                     </Stack>
                 </Grid>
                 <Grid item>
-                    <Stack
-                        width="95vw"
-                        component={Paper}
-                        elevation={ELEVATION}
-                        py={2}
-                    >
-                        <Typography mx={1} variant="h4" fontWeight={600}>
-                            TOSS
-                        </Typography>
-                        <Typography mx={3} variant="h5" fontWeight={200}>
-                            When batting first,
-                        </Typography>
-                        <br />
-                        <Stack
-                            direction="row"
-                            width="100%"
-                            justifyContent="space-around"
-                        >
-                            <Stack
-                                alignItems="center"
-                                component={Paper}
-                                elevation={ELEVATION}
-                                direction="column"
-                                width="35%"
-                                spacing={1}
-                                sx={{ backgroundColor: "#212121" }}
-                            >
-                                <Typography variant="h5" fontWeight={800}>
-                                    2
-                                </Typography>
-                                <Typography variant="body1" fontWeight={200}>
-                                    Wins
-                                </Typography>
-                            </Stack>
-                            <Divider orientation="vertical" />
-                            <Stack
-                                alignItems="center"
-                                component={Paper}
-                                elevation={ELEVATION}
-                                direction="column"
-                                width="35%"
-                                spacing={1}
-                                sx={{ backgroundColor: "#212121" }}
-                            >
-                                <Typography variant="h5" fontWeight={800}>
-                                    2
-                                </Typography>
-                                <Typography variant="body1" fontWeight={200}>
-                                    Losses
-                                </Typography>
-                            </Stack>
-                        </Stack>
-                        <br />
-                        <Divider variant="inset" />
-                        <br />
-                        <Typography mx={3} variant="h5" fontWeight={200}>
-                            When fielding first,
-                        </Typography>
-                        <br />
-                        <Stack
-                            direction="row"
-                            width="100%"
-                            justifyContent="space-around"
-                        >
-                            <Stack
-                                alignItems="center"
-                                component={Paper}
-                                elevation={ELEVATION}
-                                direction="column"
-                                width="35%"
-                                spacing={1}
-                                sx={{ backgroundColor: "#212121" }}
-                            >
-                                <Typography variant="h5" fontWeight={800}>
-                                    2
-                                </Typography>
-                                <Typography variant="body1" fontWeight={200}>
-                                    Wins
-                                </Typography>
-                            </Stack>
-                            <Divider orientation="vertical" />
-                            <Stack
-                                alignItems="center"
-                                component={Paper}
-                                elevation={ELEVATION}
-                                direction="column"
-                                width="35%"
-                                spacing={1}
-                                sx={{ backgroundColor: "#212121" }}
-                            >
-                                <Typography variant="h5" fontWeight={800}>
-                                    2
-                                </Typography>
-                                <Typography variant="body1" fontWeight={200}>
-                                    Losses
-                                </Typography>
-                            </Stack>
-                        </Stack>
-                    </Stack>
+                    <Toss></Toss>
                 </Grid>
                 <Grid item></Grid>
             </Grid>
