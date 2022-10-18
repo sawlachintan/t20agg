@@ -5,12 +5,15 @@ import {
     ThemeProvider,
     createTheme,
     Stack,
+    IconButton,
 } from "@mui/material";
 import { motion } from "framer-motion";
-import { FONTS } from "./assets/constants";
+import { ELEVATION, FONTS } from "./assets/constants";
 import { TeamContainer } from "./TeamContainer";
-
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { Toss } from "./Toss";
+import { LinkedIn, Twitter } from "@mui/icons-material";
+import { Footer } from "./Footer";
 
 function App() {
     const theme = createTheme({
@@ -63,8 +66,36 @@ function App() {
                 <Grid item>
                     <TeamContainer />
                 </Grid>
-                <Grid item>
+                <Grid
+                    item
+                    component={motion.div}
+                    initial={{ opacity: 0, translateY: 50 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.15,
+                        opacity: { duration: 1.25 },
+                        translateY: { duration: 0.625 },
+                        default: { ease: "linaer" },
+                    }}
+                >
                     <Toss />
+                </Grid>
+                {/* Footer */}
+                <Grid
+                    item
+                    component={motion.div}
+                    initial={{ opacity: 0, translateY: 50 }}
+                    whileInView={{ opacity: 1, translateY: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        delay: 0.35,
+                        opacity: { duration: 1.25 },
+                        translateY: { duration: 0.625 },
+                        default: { ease: "linaer" },
+                    }}
+                >
+                    <Footer />
                 </Grid>
             </Grid>
         </ThemeProvider>
