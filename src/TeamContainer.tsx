@@ -1,4 +1,6 @@
 import { Stack, Tooltip, Button } from "@mui/material";
+import { useState } from "react";
+import { useLocalStorage } from "react-use";
 import { TEAMS } from "./assets/constants";
 
 type Props = {};
@@ -9,6 +11,8 @@ type teamType = {
 };
 
 export const TeamContainer = (props: Props) => {
+    const [team, setTeam, removeTeam] = useLocalStorage<string>("team", "IND");
+
     return (
         <Stack
             direction="row"
@@ -18,10 +22,17 @@ export const TeamContainer = (props: Props) => {
             overflow="scroll"
             justifyContent={"space-between"}
         >
-            {TEAMS.map((team: teamType, index: number) => {
+            {TEAMS.map((a_team: teamType, index: number) => {
                 return (
-                    <Tooltip key={index} title={team.name}>
-                        <Button variant="contained">{team.abb}</Button>
+                    <Tooltip key={index} title={a_team.name}>
+                        <Button
+                            variant={
+                                a_team.abb === team ? "contained" : "outlined"
+                            }
+                            onClick={() => setTeam(a_team.abb)}
+                        >
+                            {a_team.abb}
+                        </Button>
                     </Tooltip>
                 );
             })}

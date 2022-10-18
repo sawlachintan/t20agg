@@ -64,9 +64,8 @@ function App() {
                     <TeamContainer />
                 </Grid>
                 <Grid item>
-                    <Toss></Toss>
+                    <Toss />
                 </Grid>
-                <Grid item></Grid>
             </Grid>
         </ThemeProvider>
     );
