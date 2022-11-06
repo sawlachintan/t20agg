@@ -1,21 +1,35 @@
-import { Twitter, LinkedIn, GitHub } from "@mui/icons-material";
-import { Stack, Paper, IconButton, Typography } from "@mui/material";
+import { Twitter, LinkedIn, GitHub, Language } from "@mui/icons-material";
+import {
+    Stack,
+    Paper,
+    IconButton,
+    Typography,
+    useMediaQuery,
+} from "@mui/material";
 import { ELEVATION } from "./assets/constants";
 
 type Props = {};
 
 export const Footer = (props: Props) => {
+    const matches = useMediaQuery("(min-width:700px)");
     return (
         <Stack
             direction="column"
             component={Paper}
             spacing={2}
             elevation={ELEVATION}
-            width="95vw"
+            width={matches ? "60vw" : "90vw"}
             alignItems="center"
             py={2}
         >
             <Stack direction="row" width="50%" justifyContent="space-around">
+                <IconButton
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href={"https://sawlachintan.github.io/personal-website"}
+                >
+                    <Language />
+                </IconButton>
                 <IconButton
                     target="_blank"
                     rel="noreferrer noopener"
@@ -42,7 +56,7 @@ export const Footer = (props: Props) => {
                 Data sourced from Cricsheet, Cricinfo
             </Typography>
             <Typography variant="subtitle1">
-                Last updated on Oct 18, 2022
+                Last updated on October 24, 2022
             </Typography>
         </Stack>
     );

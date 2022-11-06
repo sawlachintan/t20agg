@@ -5,8 +5,9 @@ import {
     ThemeProvider,
     createTheme,
 } from "@mui/material";
-import { useState } from "react";
+import { useContext } from "react";
 import { useLocalStorage } from "react-use";
+import { TeamContext } from "./App";
 import { TEAMS } from "./assets/constants";
 
 type Props = {};
@@ -18,7 +19,7 @@ type teamType = {
 };
 
 export const TeamContainer = (props: Props) => {
-    const [team, setTeam, removeTeam] = useLocalStorage<string>("team", "IND");
+    const { team, setTeam } = useContext(TeamContext);
 
     return (
         <Stack
@@ -39,6 +40,7 @@ export const TeamContainer = (props: Props) => {
                                 },
                             },
                         })}
+                        key={a_team.abb}
                     >
                         <Tooltip key={index} title={a_team.name}>
                             <Button

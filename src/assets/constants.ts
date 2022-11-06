@@ -4,18 +4,38 @@ type team = {
     color: string;
 };
 export const TEAMS: team[] = [
-    { abb: "IND", name: "India", color: "rgb(86, 187, 245)" },
-    { abb: "AUS", name: "Australia", color: "rgb(199, 182, 86)" },
-    { abb: "NZ", name: "New Zealand", color: "rgb(255, 240, 255)" },
-    { abb: "PAK", name: "Pakistan", color: "rgb(56, 100, 82)" },
-    { abb: "ENG", name: "England", color: "rgb(180, 49, 54)" },
-    { abb: "SA", name: "South Africa", color: "rgb(225, 200, 99)" },
-    { abb: "BAN", name: "Bangladesh", color: "rgb(230, 60, 52)" },
-    { abb: "NAM", name: "Namibia", color: "rgb(98, 140, 209)" },
-    { abb: "SCO", name: "Scotland", color: "rgb(83, 50, 119)" },
-    { abb: "WI", name: "West Indies", color: "rgb(151, 47, 74)" },
-    { abb: "SL", name: "Sri Lanka", color: "rgb(52, 100, 168)" },
+    { abb: "CSK", name: "Chennai Super Kings", color: "#ffc107" },
+    {
+        abb: "RCB",
+        name: "Royal Challengers Bangalore",
+        color: "#e00c0b",
+    },
+    { abb: "MI", name: "Mumbai Indians", color: "#004ba0" },
+    { abb: "GT", name: "Gujarat Titans", color: "#5bcbf5" },
+    { abb: "LSG", name: "Lucknow SuperGiants", color: "#30d5c8" },
+    { abb: "RR", name: "Rajasthan Royals", color: "#e50595" },
+    { abb: "DC", name: "Delhi Capitals", color: "#17479e" },
+    { abb: "SRH", name: "Sunrisers Hyderabad", color: "#e75900" },
+    { abb: "PBKS", name: "Punjab Kings", color: "#ed1c24" },
 ];
+
+// csk: "#ffc107",
+// mi: "#004BA0",
+// rcb: "#e00c0b",
+// kkr: "#563089",
+// delhi: "#17479e",
+// pbks: "#ed1c24",
+// rr: "#e50595",
+// gt: "#5bcbf5",
+// //"#0b1d34"
+// lsg: "#30D5C8",
+// srh: "#e75900",
+// ktk: "#7F3C9A",
+// gl: "#F97324",
+// rps: "#A51B8A",
+// deccan: "#425170",
+// //#011B35
+// pwi: "#2F9BE3",
 
 export const FONTS: string[] = [
     "Poppins",

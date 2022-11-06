@@ -1,9 +1,21 @@
 import { Stack, Paper, Typography, Divider } from "@mui/material";
 import { ELEVATION } from "./assets/constants";
+import { json } from "d3-fetch";
+import { useContext } from "react";
+import { TeamContext } from "./App";
+import { useData } from "./hooks/useData";
 
 type Props = {};
 
 export const Toss = (props: Props) => {
+    const { team } = useContext(TeamContext);
+
+    const data = useData();
+
+    console.log(
+        data &&
+            data.filter((d: any) => d.abb.toLowerCase() === team.toLowerCase())
+    );
     return (
         <Stack width="95vw" component={Paper} elevation={ELEVATION} py={2}>
             <Typography mx={1} variant="h4" fontWeight={600}>
@@ -26,8 +38,12 @@ export const Toss = (props: Props) => {
                     <Typography variant="h5" fontWeight={800} color="#009639">
                         2
                     </Typography>
-                    <Typography variant="body1" fontWeight={200}>
-                        Wins
+                    <Typography
+                        sx={{ letterSpacing: 2.5 }}
+                        variant="body1"
+                        fontWeight={600}
+                    >
+                        WINS
                     </Typography>
                 </Stack>
                 <Divider orientation="vertical" />
@@ -43,8 +59,12 @@ export const Toss = (props: Props) => {
                     <Typography variant="h5" fontWeight={800} color="#E22F22">
                         2
                     </Typography>
-                    <Typography variant="body1" fontWeight={200}>
-                        Losses
+                    <Typography
+                        sx={{ letterSpacing: 2.5 }}
+                        variant="body1"
+                        fontWeight={600}
+                    >
+                        LOSSES
                     </Typography>
                 </Stack>
             </Stack>
@@ -61,15 +81,19 @@ export const Toss = (props: Props) => {
                     component={Paper}
                     elevation={ELEVATION}
                     direction="column"
-                    width="35%"
+                    width="45%"
                     spacing={1}
                     sx={{ backgroundColor: "#212121" }}
                 >
                     <Typography variant="h5" fontWeight={800} color="#009639">
                         2
                     </Typography>
-                    <Typography variant="body1" fontWeight={200}>
-                        Wins
+                    <Typography
+                        sx={{ letterSpacing: 2.5 }}
+                        variant="body1"
+                        fontWeight={600}
+                    >
+                        WINS
                     </Typography>
                 </Stack>
                 <Divider orientation="vertical" />
@@ -78,15 +102,19 @@ export const Toss = (props: Props) => {
                     component={Paper}
                     elevation={ELEVATION}
                     direction="column"
-                    width="35%"
+                    width="45%"
                     spacing={1}
                     sx={{ backgroundColor: "#212121" }}
                 >
                     <Typography variant="h5" fontWeight={800} color="#E22F22">
                         2
                     </Typography>
-                    <Typography variant="body1" fontWeight={200}>
-                        Losses
+                    <Typography
+                        sx={{ letterSpacing: 2.5 }}
+                        variant="body1"
+                        fontWeight={600}
+                    >
+                        LOSSES
                     </Typography>
                 </Stack>
             </Stack>

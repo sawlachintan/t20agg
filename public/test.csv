@@ -1,0 +1,149 @@
+key,team,decision,winner,runs,wickets,abb
+ipl0877,Chennai Super Kings,bat,0,131,4,CSK
+ipl0877,Kolkata Knight Riders,field,1,133,5,KKR
+ipl0878,Punjab Kings,field,1,208,2,PBKS
+ipl0878,Royal Challengers Bangalore,bat,0,205,5,RCB
+ipl0879,Mumbai Indians,bat,0,177,6,MI
+ipl0879,Delhi Capitals,field,1,179,5,DC
+ipl0880,Gujarat Titans,field,1,161,6,GT
+ipl0880,Lucknow Super Giants,bat,0,158,5,LSG
+ipl0881,Rajasthan Royals,bat,1,210,7,RR
+ipl0881,Sunrisers Hyderabad,field,0,149,6,SRH
+ipl0882,Kolkata Knight Riders,bat,0,128,7,KKR
+ipl0882,Royal Challengers Bangalore,field,1,132,10,RCB
+ipl0883,Chennai Super Kings,bat,0,210,4,CSK
+ipl0883,Lucknow Super Giants,field,1,211,7,LSG
+ipl0884,Punjab Kings,bat,0,137,4,PBKS
+ipl0884,Kolkata Knight Riders,field,1,141,10,KKR
+ipl0885,Gujarat Titans,bat,1,171,9,GT
+ipl0885,Delhi Capitals,field,0,157,6,DC
+ipl0886,Mumbai Indians,field,0,170,8,MI
+ipl0886,Rajasthan Royals,bat,1,193,8,RR
+ipl0887,Chennai Super Kings,field,0,126,8,CSK
+ipl0887,Punjab Kings,bat,1,180,10,PBKS
+ipl0888,Lucknow Super Giants,bat,1,169,9,LSG
+ipl0888,Sunrisers Hyderabad,field,0,157,7,SRH
+ipl0889,Rajasthan Royals,bat,0,169,6,RR
+ipl0889,Royal Challengers Bangalore,field,1,173,3,RCB
+ipl0890,Mumbai Indians,bat,0,161,5,MI
+ipl0890,Kolkata Knight Riders,field,1,162,4,KKR
+ipl0891,Lucknow Super Giants,field,1,155,3,LSG
+ipl0891,Delhi Capitals,bat,0,149,4,DC
+ipl0892,Punjab Kings,bat,0,189,4,PBKS
+ipl0892,Gujarat Titans,field,1,190,9,GT
+ipl0893,Royal Challengers Bangalore,field,1,152,6,RCB
+ipl0893,Mumbai Indians,bat,0,151,3,MI
+ipl0894,Sunrisers Hyderabad,field,1,155,7,SRH
+ipl0894,Chennai Super Kings,bat,0,154,2,CSK
+ipl0895,Rajasthan Royals,bat,1,165,8,RR
+ipl0895,Lucknow Super Giants,field,0,162,6,LSG
+ipl0896,Delhi Capitals,bat,1,215,10,DC
+ipl0896,Kolkata Knight Riders,field,0,171,5,KKR
+ipl0897,Gujarat Titans,bat,0,162,3,GT
+ipl0897,Sunrisers Hyderabad,field,1,168,7,SRH
+ipl0898,Royal Challengers Bangalore,field,0,193,4,RCB
+ipl0898,Chennai Super Kings,bat,1,216,9,CSK
+ipl0899,Mumbai Indians,field,0,186,5,MI
+ipl0899,Punjab Kings,bat,1,198,9,PBKS
+ipl0900,Rajasthan Royals,field,0,155,4,RR
+ipl0900,Gujarat Titans,bat,1,192,9,GT
+ipl0901,Kolkata Knight Riders,bat,0,175,3,KKR
+ipl0901,Sunrisers Hyderabad,field,1,176,8,SRH
+ipl0902,Royal Challengers Bangalore,bat,1,189,7,RCB
+ipl0902,Delhi Capitals,field,0,173,5,DC
+ipl0903,Lucknow Super Giants,bat,1,199,9,LSG
+ipl0903,Mumbai Indians,field,0,181,4,MI
+ipl0904,Chennai Super Kings,bat,0,169,7,CSK
+ipl0904,Gujarat Titans,field,1,170,5,GT
+ipl0905,Punjab Kings,bat,0,151,3,PBKS
+ipl0905,Sunrisers Hyderabad,field,1,152,10,SRH
+ipl0906,Kolkata Knight Riders,field,0,210,5,KKR
+ipl0906,Rajasthan Royals,bat,1,217,10,RR
+ipl0907,Royal Challengers Bangalore,bat,1,181,8,RCB
+ipl0907,Lucknow Super Giants,field,0,163,6,LSG
+ipl0908,Punjab Kings,bat,0,115,1,PBKS
+ipl0908,Delhi Capitals,field,1,119,10,DC
+ipl0909,Chennai Super Kings,field,1,156,7,CSK
+ipl0909,Mumbai Indians,bat,0,155,7,MI
+ipl0910,Rajasthan Royals,bat,1,222,8,RR
+ipl0910,Delhi Capitals,field,0,207,2,DC
+ipl0911,Sunrisers Hyderabad,field,1,72,10,SRH
+ipl0911,Royal Challengers Bangalore,bat,0,68,1,RCB
+ipl0912,Kolkata Knight Riders,field,0,148,9,KKR
+ipl0912,Gujarat Titans,bat,1,156,8,GT
+ipl0913,Mumbai Indians,field,0,132,6,MI
+ipl0913,Lucknow Super Giants,bat,1,168,8,LSG
+ipl0914,Chennai Super Kings,field,0,176,4,CSK
+ipl0914,Punjab Kings,bat,1,187,6,PBKS
+ipl0915,Rajasthan Royals,bat,1,144,10,RR
+ipl0915,Royal Challengers Bangalore,field,0,115,8,RCB
+ipl0916,Gujarat Titans,field,1,199,6,GT
+ipl0916,Sunrisers Hyderabad,bat,0,195,5,SRH
+ipl0917,Delhi Capitals,field,1,150,9,DC
+ipl0917,Kolkata Knight Riders,bat,0,146,6,KKR
+ipl0918,Punjab Kings,field,0,133,8,PBKS
+ipl0918,Lucknow Super Giants,bat,1,153,8,LSG
+ipl0919,Mumbai Indians,field,1,161,6,MI
+ipl0919,Rajasthan Royals,bat,0,158,5,RR
+ipl0920,Gujarat Titans,field,1,174,6,GT
+ipl0920,Royal Challengers Bangalore,bat,0,170,4,RCB
+ipl0921,Chennai Super Kings,bat,1,202,6,CSK
+ipl0921,Sunrisers Hyderabad,field,0,189,2,SRH
+ipl0922,Delhi Capitals,field,0,189,3,DC
+ipl0922,Lucknow Super Giants,bat,1,195,7,LSG
+ipl0923,Kolkata Knight Riders,field,1,158,5,KKR
+ipl0923,Rajasthan Royals,bat,0,152,3,RR
+ipl0924,Gujarat Titans,bat,0,143,2,GT
+ipl0924,Punjab Kings,field,1,145,8,PBKS
+ipl0925,Royal Challengers Bangalore,bat,1,173,8,RCB
+ipl0925,Chennai Super Kings,field,0,160,8,CSK
+ipl0926,Sunrisers Hyderabad,field,0,186,3,SRH
+ipl0926,Delhi Capitals,bat,1,207,8,DC
+ipl0927,Gujarat Titans,field,0,172,6,GT
+ipl0927,Mumbai Indians,bat,1,177,5,MI
+ipl0928,Kolkata Knight Riders,field,0,101,7,KKR
+ipl0928,Lucknow Super Giants,bat,1,176,10,LSG
+ipl0929,Punjab Kings,bat,0,189,4,PBKS
+ipl0929,Rajasthan Royals,field,1,190,5,RR
+ipl0930,Chennai Super Kings,bat,1,208,10,CSK
+ipl0930,Delhi Capitals,field,0,117,6,DC
+ipl0931,Sunrisers Hyderabad,field,0,125,3,SRH
+ipl0931,Royal Challengers Bangalore,bat,1,192,10,RCB
+ipl0932,Mumbai Indians,field,0,113,9,MI
+ipl0932,Kolkata Knight Riders,bat,1,165,10,KKR
+ipl0933,Gujarat Titans,bat,1,144,10,GT
+ipl0933,Lucknow Super Giants,field,0,82,4,LSG
+ipl0934,Rajasthan Royals,bat,0,160,2,RR
+ipl0934,Delhi Capitals,field,1,161,6,DC
+ipl0935,Mumbai Indians,field,1,103,10,MI
+ipl0935,Chennai Super Kings,bat,0,97,5,CSK
+ipl0936,Royal Challengers Bangalore,field,0,155,9,RCB
+ipl0936,Punjab Kings,bat,1,209,9,PBKS
+ipl0937,Kolkata Knight Riders,bat,1,177,8,KKR
+ipl0937,Sunrisers Hyderabad,field,0,123,6,SRH
+ipl0938,Rajasthan Royals,bat,1,178,8,RR
+ipl0938,Lucknow Super Giants,field,0,154,6,LSG
+ipl0939,Gujarat Titans,field,1,137,5,GT
+ipl0939,Chennai Super Kings,bat,0,133,3,CSK
+ipl0940,Delhi Capitals,bat,1,159,9,DC
+ipl0940,Punjab Kings,field,0,142,7,PBKS
+ipl0941,Mumbai Indians,field,0,190,6,MI
+ipl0941,Sunrisers Hyderabad,bat,1,193,7,SRH
+ipl0942,Lucknow Super Giants,bat,1,210,8,LSG
+ipl0942,Kolkata Knight Riders,field,0,208,0,KKR
+ipl0943,Royal Challengers Bangalore,field,1,170,5,RCB
+ipl0943,Gujarat Titans,bat,0,168,2,GT
+ipl0944,Rajasthan Royals,field,1,151,6,RR
+ipl0944,Chennai Super Kings,bat,0,150,5,CSK
+ipl0945,Mumbai Indians,field,1,160,7,MI
+ipl0945,Delhi Capitals,bat,0,159,5,DC
+ipl0946,Sunrisers Hyderabad,bat,0,157,5,SRH
+ipl0946,Punjab Kings,field,1,160,8,PBKS
+ipl0947,Gujarat Titans,field,1,191,6,GT
+ipl0947,Rajasthan Royals,bat,0,188,3,RR
+ipl0948,Lucknow Super Giants,field,0,193,4,LSG
+ipl0948,Royal Challengers Bangalore,bat,1,207,6,RCB
+ipl0949,Rajasthan Royals,field,1,161,8,RR
+ipl0949,Royal Challengers Bangalore,bat,0,157,3,RCB
+ipl0950,Rajasthan Royals,bat,0,130,3,RR
+ipl0950,Gujarat Titans,field,1,133,9,GT
