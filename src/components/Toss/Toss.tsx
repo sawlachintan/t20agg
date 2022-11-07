@@ -7,15 +7,15 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { ChangeEvent, FC } from "react";
-import { TossChart } from "./TossChart";
-import { TossTable } from "./TossTable";
+import { Chart } from "./Chart";
+import { Table } from "./Table";
 import { useLocalStorage } from "react-use";
 
 type Props = {
     data: any;
 };
 
-export const TossMain: FC<Props> = ({ data }) => {
+export const Toss: FC<Props> = ({ data }) => {
     const [tossCheck, setTossCheck, removeTossCheck] = useLocalStorage<boolean>(
         "tossCheck",
         true
@@ -58,11 +58,7 @@ export const TossMain: FC<Props> = ({ data }) => {
                     default: { ease: "linear" },
                 }}
             >
-                {tossCheck ? (
-                    <TossChart data={data} />
-                ) : (
-                    <TossTable data={data} />
-                )}
+                {tossCheck ? <Chart data={data} /> : <Table data={data} />}
             </Grid>
         </>
     );

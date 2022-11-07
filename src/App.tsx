@@ -18,7 +18,7 @@ import { useLocalStorage } from "react-use";
 import { useData } from "./hooks/useData";
 import { Runs } from "./components/Runs/Runs";
 import { Wickets } from "./components/Wickets/Wickets";
-import { TossMain } from "./components/Toss/TossMain";
+import { Toss } from "./components/Toss/Toss";
 
 export const TeamContext = createContext<any>(undefined);
 
@@ -116,7 +116,7 @@ function App() {
                         direction="column"
                         alignItems={"center"}
                     >
-                        <TossMain data={data} />
+                        <Toss data={data} />
 
                         <Grid item container justifyContent="space-around">
                             <Grid item>

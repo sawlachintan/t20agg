@@ -66,7 +66,7 @@ const TableRow: FC<rowProps> = ({ tossSpacing, value, metric }) => {
     );
 };
 
-export const TossTable: FC<Props> = ({ data }) => {
+export const Table: FC<Props> = ({ data }) => {
     const { team } = useContext(TeamContext);
 
     const matches = useMediaQuery("(min-width:700px)");

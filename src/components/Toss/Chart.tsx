@@ -91,7 +91,7 @@ const fraction = (numerator: number, anchor: number) => {
     return parseFloat(value.toFixed(2));
 };
 
-export const TossChart: FC<Props> = ({ data }) => {
+export const Chart: FC<Props> = ({ data }) => {
     const { team } = useContext(TeamContext);
     const matches = useMediaQuery("(min-width:700px)");
 
