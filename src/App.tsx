@@ -12,14 +12,13 @@ import {
 import { motion } from "framer-motion";
 import { FONTS } from "./assets/constants";
 import { TeamContainer } from "./components/TeamContainer";
-import { Toss as Toss2 } from "./components/Toss/Toss copy";
 import { Footer } from "./Footer";
 import { createContext, ChangeEvent } from "react";
 import { useLocalStorage } from "react-use";
 import { useData } from "./hooks/useData";
-import { TossChart } from "./components/Toss/TossChart";
 import { Runs } from "./components/Runs/Runs";
 import { Wickets } from "./components/Wickets/Wickets";
+import { TossMain } from "./components/Toss/TossMain";
 
 export const TeamContext = createContext<any>(undefined);
 
@@ -27,10 +26,6 @@ function App() {
     const theme = createTheme({
         palette: {
             mode: "dark",
-            // background: {
-            //     default: "#1F1E1E",
-            //     paper: "#1F1E1E",
-            // },
             divider: "#2196f3",
         },
         typography: {
@@ -39,14 +34,6 @@ function App() {
     });
     const [team, setTeam, removeTeam] = useLocalStorage<string>("team", "CSK");
     const data = useData();
-    const [tossCheck, setTossCheck, removeTossCheck] = useLocalStorage<boolean>(
-        "tossCheck",
-        true
-    );
-
-    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setTossCheck(event.target.checked);
-    };
 
     return (
         <ThemeProvider theme={theme}>
@@ -104,7 +91,7 @@ function App() {
                         transition={{
                             delay: 0.15,
                             opacity: { duration: 1.25 },
-                            default: { ease: "linaer" },
+                            default: { ease: "linear" },
                         }}
                         mt={7}
                     >
@@ -121,7 +108,7 @@ function App() {
                             delay: 0.15,
                             opacity: { duration: 1.25 },
                             translateY: { duration: 0.625 },
-                            default: { ease: "linaer" },
+                            default: { ease: "linear" },
                         }}
                         container
                         width="100%"
@@ -129,45 +116,8 @@ function App() {
                         direction="column"
                         alignItems={"center"}
                     >
-                        <Grid item container justifyContent="space-around">
-                            <Grid item>
-                                <Typography variant="h4" fontWeight={600}>
-                                    Toss
-                                </Typography>
-                            </Grid>
-                            <Grid item>
-                                <FormGroup>
-                                    <FormControlLabel
-                                        control={
-                                            <Switch
-                                                checked={tossCheck}
-                                                onChange={handleChange}
-                                            />
-                                        }
-                                        label={"Graph"}
-                                    />
-                                </FormGroup>
-                            </Grid>
-                        </Grid>
-                        <Grid
-                            item
-                            component={motion.div}
-                            initial={{ opacity: 0, translateY: 50 }}
-                            whileInView={{ opacity: 1, translateY: 0 }}
-                            viewport={{ once: true }}
-                            transition={{
-                                delay: 0.15,
-                                opacity: { duration: 1.25 },
-                                translateY: { duration: 0.625 },
-                                default: { ease: "linaer" },
-                            }}
-                        >
-                            {tossCheck ? (
-                                <TossChart data={data} />
-                            ) : (
-                                <Toss2 data={data} />
-                            )}
-                        </Grid>
+                        <TossMain data={data} />
+
                         <Grid item container justifyContent="space-around">
                             <Grid item>
                                 <Typography variant="h4" fontWeight={600}>
@@ -193,7 +143,7 @@ function App() {
                                 delay: 0.15,
                                 opacity: { duration: 1.25 },
                                 translateY: { duration: 0.625 },
-                                default: { ease: "linaer" },
+                                default: { ease: "linear" },
                             }}
                         >
                             <Runs />
@@ -223,7 +173,7 @@ function App() {
                                 delay: 0.15,
                                 opacity: { duration: 1.25 },
                                 translateY: { duration: 0.625 },
-                                default: { ease: "linaer" },
+                                default: { ease: "linear" },
                             }}
                         >
                             <Wickets />
@@ -241,7 +191,7 @@ function App() {
                         delay: 0.3,
                         opacity: { duration: 1.25 },
                         translateY: { duration: 0.625 },
-                        default: { ease: "linaer" },
+                        default: { ease: "linear" },
                     }}
                 >
                     <Footer />

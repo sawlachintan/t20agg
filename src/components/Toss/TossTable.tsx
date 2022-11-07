@@ -5,6 +5,8 @@ import {
     Divider,
     useMediaQuery,
     Grid,
+    createTheme,
+    ThemeProvider,
 } from "@mui/material";
 import { ELEVATION, numberFormat } from "../../assets/constants";
 import { FC, useContext } from "react";
@@ -34,19 +36,37 @@ const TableRow: FC<rowProps> = ({ tossSpacing, value, metric }) => {
             px={2}
             mx={tossSpacing ? 10 : undefined}
         >
-            <Grid item>
+            <Grid item xs={6}>
                 <Typography variant="subtitle1">{metric}</Typography>
             </Grid>
-            <Grid item>
-                <Typography variant="body1" fontWeight={700} color="#2196f3">
+            <Grid item xs={6}>
+                <Typography
+                    variant="body1"
+                    align="left"
+                    fontWeight={700}
+                    color="#2196f3"
+                >
                     {numberFormat(value)}
                 </Typography>
             </Grid>
+            {metric !== "Wickets" && (
+                <Grid item xs={12}>
+                    <ThemeProvider
+                        theme={createTheme({
+                            palette: {
+                                divider: "#444",
+                            },
+                        })}
+                    >
+                        <Divider />
+                    </ThemeProvider>
+                </Grid>
+            )}
         </Grid>
     );
 };
 
-export const Toss: FC<Props> = ({ data }) => {
+export const TossTable: FC<Props> = ({ data }) => {
     const { team } = useContext(TeamContext);
 
     const matches = useMediaQuery("(min-width:700px)");
@@ -123,12 +143,12 @@ export const Toss: FC<Props> = ({ data }) => {
             spacing={4}
         >
             <Grid container direction="row" spacing={2} mx={1}>
-                <Grid item container direction="row" xs={6}>
+                <Grid item container direction="row" xs={6} spacing={2}>
                     <Grid item xs={12}>
                         <Typography variant="h5">Batting</Typography>
                     </Grid>
-                    <Grid item xs={12} pb={3}>
-                        <Divider variant="middle" />
+                    <Grid item xs={12} pb={undefined}>
+                        <Divider />
                     </Grid>
                     {batRows.map((d: { key: string; value: number }) => {
                         return (
@@ -141,12 +161,12 @@ export const Toss: FC<Props> = ({ data }) => {
                         );
                     })}
                 </Grid>
-                <Grid item container direction="row" xs={6}>
+                <Grid item container direction="row" xs={6} spacing={2}>
                     <Grid item xs={12}>
                         <Typography variant="h5">Fielding</Typography>
                     </Grid>
-                    <Grid item xs={12} pb={3}>
-                        <Divider variant="middle" />
+                    <Grid item xs={12} pb={undefined}>
+                        <Divider />
                     </Grid>
                     {fieldRows.map((d: { key: string; value: number }) => {
                         return (
