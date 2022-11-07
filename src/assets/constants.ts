@@ -1,3 +1,5 @@
+import { format } from "d3";
+
 type team = {
     abb: string;
     name: string;
@@ -18,6 +20,8 @@ export const TEAMS: team[] = [
     { abb: "SRH", name: "Sunrisers Hyderabad", color: "#e75900" },
     { abb: "PBKS", name: "Punjab Kings", color: "#ed1c24" },
 ];
+
+export const numberFormat = format(",");
 
 // csk: "#ffc107",
 // mi: "#004BA0",

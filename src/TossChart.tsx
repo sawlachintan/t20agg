@@ -145,7 +145,7 @@ export const TossChart: FC<Props> = ({ data }) => {
     const margin = {
         top: 30,
         left: 50,
-        right: 15,
+        right: matches ? 20 : 40,
         bottom: 30,
     };
 
@@ -184,14 +184,12 @@ export const TossChart: FC<Props> = ({ data }) => {
                 .join("g")
                 .attr("class", "layer")
                 .attr("fill", (layer: any): any => {
-                    console.log(layer.key);
                     return layer.key === "Bat First" ? "#B4CDE6" : "#2196f3";
                 })
                 .selectAll("rect")
                 .data((layer) => layer)
                 .join("rect")
                 .attr("y", (sequence: any): any => {
-                    console.log("Hello, what does it do?", sequence.data);
                     return yScale(sequence.data.metric);
                 })
                 .attr("height", yScale.bandwidth())
@@ -212,17 +210,6 @@ export const TossChart: FC<Props> = ({ data }) => {
             spacing={2}
         >
             <Typography align={"center"}>
-                Field first{" "}
-                <span
-                    style={{
-                        width: "1.5vh",
-                        height: "1.5vh",
-                        backgroundColor: "#B4CDE6",
-                        borderRadius: "5%",
-                        display: "inline-block",
-                        marginRight: "6vw",
-                    }}
-                ></span>{" "}
                 Bat first{" "}
                 <span
                     style={{
@@ -231,8 +218,19 @@ export const TossChart: FC<Props> = ({ data }) => {
                         backgroundColor: "#2196f3",
                         borderRadius: "5%",
                         display: "inline-block",
+                        marginRight: "6vw",
                     }}
-                ></span>
+                ></span>{" "}
+                Field first{" "}
+                <span
+                    style={{
+                        width: "1.5vh",
+                        height: "1.5vh",
+                        backgroundColor: "#B4CDE6",
+                        borderRadius: "5%",
+                        display: "inline-block",
+                    }}
+                ></span>{" "}
             </Typography>
             <div
                 ref={wrapperRef}

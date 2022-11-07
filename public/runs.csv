@@ -1,0 +1,71 @@
+team,metric,count,value,abb
+Chennai Super Kings,0s,720,0,CSK
+Chennai Super Kings,1s,617,617,CSK
+Chennai Super Kings,2s,91,182,CSK
+Chennai Super Kings,3s,4,12,CSK
+Chennai Super Kings,4s,184,736,CSK
+Chennai Super Kings,6s,103,618,CSK
+Chennai Super Kings,Extras,99,123,CSK
+Delhi Capitals,0s,675,0,DC
+Delhi Capitals,1s,574,574,DC
+Delhi Capitals,2s,82,164,DC
+Delhi Capitals,3s,8,24,DC
+Delhi Capitals,4s,205,820,DC
+Delhi Capitals,6s,106,636,DC
+Delhi Capitals,Extras,94,121,DC
+Gujarat Titans,0s,724,0,GT
+Gujarat Titans,1s,795,795,GT
+Gujarat Titans,2s,121,242,GT
+Gujarat Titans,3s,2,6,GT
+Gujarat Titans,4s,250,1000,GT
+Gujarat Titans,6s,79,474,GT
+Gujarat Titans,Extras,105,146,GT
+Kolkata Knight Riders,0s,731,0,KKR
+Kolkata Knight Riders,1s,509,509,KKR
+Kolkata Knight Riders,2s,98,196,KKR
+Kolkata Knight Riders,3s,6,18,KKR
+Kolkata Knight Riders,4s,177,708,KKR
+Kolkata Knight Riders,6s,113,678,KKR
+Kolkata Knight Riders,Extras,101,114,KKR
+Lucknow Super Giants,0s,702,0,LSG
+Lucknow Super Giants,1s,712,712,LSG
+Lucknow Super Giants,2s,118,236,LSG
+Lucknow Super Giants,3s,5,15,LSG
+Lucknow Super Giants,4s,188,752,LSG
+Lucknow Super Giants,6s,115,690,LSG
+Lucknow Super Giants,Extras,109,143,LSG
+Mumbai Indians,0s,723,0,MI
+Mumbai Indians,1s,587,587,MI
+Mumbai Indians,2s,103,206,MI
+Mumbai Indians,3s,5,15,MI
+Mumbai Indians,4s,173,692,MI
+Mumbai Indians,6s,100,600,MI
+Mumbai Indians,Extras,93,116,MI
+Punjab Kings,0s,758,0,PBKS
+Punjab Kings,1s,560,560,PBKS
+Punjab Kings,2s,79,158,PBKS
+Punjab Kings,3s,5,15,PBKS
+Punjab Kings,4s,200,800,PBKS
+Punjab Kings,6s,110,660,PBKS
+Punjab Kings,Extras,128,150,PBKS
+Rajasthan Royals,0s,863,0,RR
+Rajasthan Royals,1s,736,736,RR
+Rajasthan Royals,2s,115,230,RR
+Rajasthan Royals,3s,5,15,RR
+Rajasthan Royals,4s,251,1004,RR
+Rajasthan Royals,6s,137,822,RR
+Rajasthan Royals,Extras,113,136,RR
+Royal Challengers Bangalore,0s,831,0,RCB
+Royal Challengers Bangalore,1s,680,680,RCB
+Royal Challengers Bangalore,2s,116,232,RCB
+Royal Challengers Bangalore,3s,14,42,RCB
+Royal Challengers Bangalore,4s,222,888,RCB
+Royal Challengers Bangalore,6s,102,612,RCB
+Royal Challengers Bangalore,Extras,131,178,RCB
+Sunrisers Hyderabad,0s,640,0,SRH
+Sunrisers Hyderabad,1s,614,614,SRH
+Sunrisers Hyderabad,2s,98,196,SRH
+Sunrisers Hyderabad,3s,4,12,SRH
+Sunrisers Hyderabad,4s,170,680,SRH
+Sunrisers Hyderabad,6s,97,582,SRH
+Sunrisers Hyderabad,Extras,77,113,SRH

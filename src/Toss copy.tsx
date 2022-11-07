@@ -6,7 +6,7 @@ import {
     useMediaQuery,
     Grid,
 } from "@mui/material";
-import { ELEVATION } from "./assets/constants";
+import { ELEVATION, numberFormat } from "./assets/constants";
 import { FC, useContext } from "react";
 import { TeamContext } from "./App";
 
@@ -18,8 +18,8 @@ type Props = {
 
 type rowProps = {
     tossSpacing: boolean;
-    value?: number;
-    metric?: string;
+    value: number;
+    metric: string;
 };
 
 const TableRow: FC<rowProps> = ({ tossSpacing, value, metric }) => {
@@ -39,7 +39,7 @@ const TableRow: FC<rowProps> = ({ tossSpacing, value, metric }) => {
             </Grid>
             <Grid item>
                 <Typography variant="body1" fontWeight={700} color="#2196f3">
-                    {value}
+                    {numberFormat(value)}
                 </Typography>
             </Grid>
         </Grid>

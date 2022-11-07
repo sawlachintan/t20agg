@@ -165,33 +165,6 @@ function App() {
                                 </FormGroup>
                             </Grid>
                         </Grid>
-                        {/* {checked && (
-                            <Grid item width={matches ? "60vw" : "90vw"}>
-                                <Typography textAlign={"right"}>
-                                    Field first{" "}
-                                    <span
-                                        style={{
-                                            width: "1.5vh",
-                                            height: "1.5vh",
-                                            backgroundColor: "#B4CDE6",
-                                            borderRadius: "5%",
-                                            display: "inline-block",
-                                            marginRight: "6vw",
-                                        }}
-                                    ></span>{" "}
-                                    Bat first{" "}
-                                    <span
-                                        style={{
-                                            width: "1.5vh",
-                                            height: "1.5vh",
-                                            backgroundColor: "#2196f3",
-                                            borderRadius: "5%",
-                                            display: "inline-block",
-                                        }}
-                                    ></span>
-                                </Typography>
-                            </Grid>
-                        )} */}
                         <Grid
                             item
                             component={motion.div}
@@ -211,7 +184,36 @@ function App() {
                                 <Toss2 data={data} />
                             )}
                         </Grid>
-                        
+                        <Grid item container justifyContent="space-around">
+                            <Grid item>
+                                <Typography variant="h4" fontWeight={600}>
+                                    Runs
+                                </Typography>
+                            </Grid>
+                            <Grid item>
+                                <FormGroup>
+                                    <FormControlLabel
+                                        control={<Switch disabled />}
+                                        label={"Graph"}
+                                    />
+                                </FormGroup>
+                            </Grid>
+                        </Grid>
+                        <Grid
+                            item
+                            component={motion.div}
+                            initial={{ opacity: 0, translateY: 50 }}
+                            whileInView={{ opacity: 1, translateY: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 0.15,
+                                opacity: { duration: 1.25 },
+                                translateY: { duration: 0.625 },
+                                default: { ease: "linaer" },
+                            }}
+                        >
+                            <Runs />
+                        </Grid>
                     </Grid>
                 </TeamContext.Provider>
                 {/* Footer */}
