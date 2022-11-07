@@ -56,7 +56,7 @@ export const Footer = (props: Props) => {
                 Data sourced from Cricsheet, Cricinfo
             </Typography>
             <Typography variant="subtitle1">
-                Last updated on October 24, 2022
+                Last updated on November 6, 2022
             </Typography>
         </Stack>
     );

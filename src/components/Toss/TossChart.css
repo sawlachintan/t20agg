@@ -1,0 +1,11 @@
+.wrapper {
+    width: 90%;
+}
+
+svg {
+    display: block;
+    width: 90%;
+
+    height: 300px;
+    overflow: visible;
+}

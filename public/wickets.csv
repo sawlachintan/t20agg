@@ -1,0 +1,62 @@
+team,kind,count,abb
+Chennai Super Kings,Bowled,12,CSK
+Chennai Super Kings,Caught,58,CSK
+Chennai Super Kings,Caught & Bowled,1,CSK
+Chennai Super Kings,Lbw,7,CSK
+Chennai Super Kings,Run Out,4,CSK
+Delhi Capitals,Bowled,11,DC
+Delhi Capitals,Caught,64,DC
+Delhi Capitals,Caught & Bowled,2,DC
+Delhi Capitals,Lbw,5,DC
+Delhi Capitals,Run Out,2,DC
+Delhi Capitals,Stumped,4,DC
+Gujarat Titans,Bowled,12,GT
+Gujarat Titans,Caught,64,GT
+Gujarat Titans,Caught & Bowled,2,GT
+Gujarat Titans,Lbw,9,GT
+Gujarat Titans,Retired Hurt,1,GT
+Gujarat Titans,Run Out,10,GT
+Gujarat Titans,Stumped,3,GT
+Kolkata Knight Riders,Bowled,8,KKR
+Kolkata Knight Riders,Caught,57,KKR
+Kolkata Knight Riders,Caught & Bowled,5,KKR
+Kolkata Knight Riders,Lbw,3,KKR
+Kolkata Knight Riders,Run Out,8,KKR
+Kolkata Knight Riders,Stumped,3,KKR
+Lucknow Super Giants,Bowled,15,LSG
+Lucknow Super Giants,Caught,71,LSG
+Lucknow Super Giants,Caught & Bowled,1,LSG
+Lucknow Super Giants,Lbw,4,LSG
+Lucknow Super Giants,Retired Out,1,LSG
+Lucknow Super Giants,Run Out,7,LSG
+Lucknow Super Giants,Stumped,1,LSG
+Mumbai Indians,Bowled,9,MI
+Mumbai Indians,Caught,64,MI
+Mumbai Indians,Caught & Bowled,2,MI
+Mumbai Indians,Hit Wicket,1,MI
+Mumbai Indians,Lbw,6,MI
+Mumbai Indians,Run Out,5,MI
+Punjab Kings,Bowled,7,PBKS
+Punjab Kings,Caught,65,PBKS
+Punjab Kings,Caught & Bowled,2,PBKS
+Punjab Kings,Lbw,1,PBKS
+Punjab Kings,Run Out,6,PBKS
+Punjab Kings,Stumped,2,PBKS
+Rajasthan Royals,Bowled,18,RR
+Rajasthan Royals,Caught,68,RR
+Rajasthan Royals,Caught & Bowled,1,RR
+Rajasthan Royals,Lbw,8,RR
+Rajasthan Royals,Run Out,7,RR
+Rajasthan Royals,Stumped,2,RR
+Royal Challengers Bangalore,Bowled,10,RCB
+Royal Challengers Bangalore,Caught,63,RCB
+Royal Challengers Bangalore,Caught & Bowled,6,RCB
+Royal Challengers Bangalore,Lbw,9,RCB
+Royal Challengers Bangalore,Run Out,7,RCB
+Royal Challengers Bangalore,Stumped,2,RCB
+Sunrisers Hyderabad,Bowled,21,SRH
+Sunrisers Hyderabad,Caught,51,SRH
+Sunrisers Hyderabad,Caught & Bowled,3,SRH
+Sunrisers Hyderabad,Lbw,5,SRH
+Sunrisers Hyderabad,Run Out,5,SRH
+Sunrisers Hyderabad,Stumped,1,SRH

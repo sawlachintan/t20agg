@@ -8,23 +8,22 @@ import {
     Switch,
     FormControlLabel,
     FormGroup,
-    useMediaQuery,
 } from "@mui/material";
 import { motion } from "framer-motion";
 import { FONTS } from "./assets/constants";
-import { TeamContainer } from "./TeamContainer";
-import { Toss as Toss2 } from "./Toss copy";
+import { TeamContainer } from "./components/TeamContainer";
+import { Toss as Toss2 } from "./components/Toss/Toss copy";
 import { Footer } from "./Footer";
 import { createContext, ChangeEvent } from "react";
 import { useLocalStorage } from "react-use";
 import { useData } from "./hooks/useData";
-import { TossChart } from "./TossChart";
-import { Runs } from "./Runs";
+import { TossChart } from "./components/Toss/TossChart";
+import { Runs } from "./components/Runs/Runs";
+import { Wickets } from "./components/Wickets/Wickets";
 
 export const TeamContext = createContext<any>(undefined);
 
 function App() {
-    const matches = useMediaQuery("(min-width:700px)");
     const theme = createTheme({
         palette: {
             mode: "dark",
@@ -40,13 +39,13 @@ function App() {
     });
     const [team, setTeam, removeTeam] = useLocalStorage<string>("team", "CSK");
     const data = useData();
-    const [checked, setChecked, removeChecked] = useLocalStorage<boolean>(
+    const [tossCheck, setTossCheck, removeTossCheck] = useLocalStorage<boolean>(
         "tossCheck",
         true
     );
 
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setChecked(event.target.checked);
+        setTossCheck(event.target.checked);
     };
 
     return (
@@ -112,21 +111,6 @@ function App() {
                         <TeamContainer />
                     </Grid>
                     {/* Toss */}
-                    {/* <Grid
-                        item
-                        component={motion.div}
-                        initial={{ opacity: 0, translateY: 50 }}
-                        whileInView={{ opacity: 1, translateY: 0 }}
-                        viewport={{ once: true }}
-                        transition={{
-                            delay: 0.15,
-                            opacity: { duration: 1.25 },
-                            translateY: { duration: 0.625 },
-                            default: { ease: "linaer" },
-                        }}
-                    >
-                        <Toss />
-                    </Grid> */}
                     <Grid
                         item
                         component={motion.div}
@@ -156,7 +140,7 @@ function App() {
                                     <FormControlLabel
                                         control={
                                             <Switch
-                                                checked={checked}
+                                                checked={tossCheck}
                                                 onChange={handleChange}
                                             />
                                         }
@@ -178,7 +162,7 @@ function App() {
                                 default: { ease: "linaer" },
                             }}
                         >
-                            {checked ? (
+                            {tossCheck ? (
                                 <TossChart data={data} />
                             ) : (
                                 <Toss2 data={data} />
@@ -213,6 +197,36 @@ function App() {
                             }}
                         >
                             <Runs />
+                        </Grid>
+                        <Grid item container justifyContent="space-around">
+                            <Grid item>
+                                <Typography variant="h4" fontWeight={600}>
+                                    Wickets
+                                </Typography>
+                            </Grid>
+                            <Grid item>
+                                <FormGroup>
+                                    <FormControlLabel
+                                        control={<Switch disabled />}
+                                        label={"Graph"}
+                                    />
+                                </FormGroup>
+                            </Grid>
+                        </Grid>
+                        <Grid
+                            item
+                            component={motion.div}
+                            initial={{ opacity: 0, translateY: 50 }}
+                            whileInView={{ opacity: 1, translateY: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                delay: 0.15,
+                                opacity: { duration: 1.25 },
+                                translateY: { duration: 0.625 },
+                                default: { ease: "linaer" },
+                            }}
+                        >
+                            <Wickets />
                         </Grid>
                     </Grid>
                 </TeamContext.Provider>
