@@ -1,9 +1,8 @@
 import { Paper, Stack, Typography, useMediaQuery } from "@mui/material";
 import {
-    Axis,
     axisBottom,
     axisLeft,
-    max,
+    easeCubicInOut,
     scaleBand,
     scaleLinear,
     select,
@@ -14,7 +13,7 @@ import { FC, useContext, useEffect, useRef } from "react";
 import { TeamContext } from "../../App";
 import { ELEVATION } from "../../assets/constants";
 import { useResizeObserver } from "../../hooks/useResizeObserver";
-import "./TossChart.css";
+import "./Chart.css";
 type Props = {
     data?: any;
 };
@@ -194,6 +193,9 @@ export const Chart: FC<Props> = ({ data }) => {
                 })
                 .attr("height", yScale.bandwidth())
                 .attr("x", `${translateX + 1}`)
+                .transition()
+                .duration(350)
+                .ease(easeCubicInOut)
                 .attr(
                     "width",
                     (sequence: any) => xScale(sequence[1]) - xScale(sequence[0])
@@ -215,7 +217,7 @@ export const Chart: FC<Props> = ({ data }) => {
                     style={{
                         width: "1.5vh",
                         height: "1.5vh",
-                        backgroundColor: "#2196f3",
+                        backgroundColor: "#B4CDE6",
                         borderRadius: "5%",
                         display: "inline-block",
                         marginRight: "6vw",
@@ -226,7 +228,7 @@ export const Chart: FC<Props> = ({ data }) => {
                     style={{
                         width: "1.5vh",
                         height: "1.5vh",
-                        backgroundColor: "#B4CDE6",
+                        backgroundColor: "#2196f3",
                         borderRadius: "5%",
                         display: "inline-block",
                     }}

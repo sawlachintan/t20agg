@@ -16,13 +16,12 @@ type Props = {
 };
 
 export const Toss: FC<Props> = ({ data }) => {
-    const [tossCheck, setTossCheck, removeTossCheck] = useLocalStorage<boolean>(
+    const [check, setCheck, removeCheck] = useLocalStorage<boolean>(
         "tossCheck",
-        true
+        false
     );
-    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setTossCheck(event.target.checked);
-    };
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) =>
+        setCheck(event.target.checked);
     return (
         <>
             <Grid item container justifyContent="space-around">
@@ -36,7 +35,7 @@ export const Toss: FC<Props> = ({ data }) => {
                         <FormControlLabel
                             control={
                                 <Switch
-                                    checked={tossCheck}
+                                    checked={check}
                                     onChange={handleChange}
                                 />
                             }
@@ -58,7 +57,7 @@ export const Toss: FC<Props> = ({ data }) => {
                     default: { ease: "linear" },
                 }}
             >
-                {tossCheck ? <Chart data={data} /> : <Table data={data} />}
+                {check ? <Chart data={data} /> : <Table data={data} />}
             </Grid>
         </>
     );
