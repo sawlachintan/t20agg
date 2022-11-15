@@ -13,6 +13,7 @@ export const TEAMS: team[] = [
         color: "#e00c0b",
     },
     { abb: "MI", name: "Mumbai Indians", color: "#004ba0" },
+    { abb: "KKR", name: "Kolkata Knight Riders", color: "#2e0899" },
     { abb: "GT", name: "Gujarat Titans", color: "#5bcbf5" },
     { abb: "LSG", name: "Lucknow SuperGiants", color: "#30d5c8" },
     { abb: "RR", name: "Rajasthan Royals", color: "#e50595" },
